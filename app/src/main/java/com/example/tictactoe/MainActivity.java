@@ -27,6 +27,7 @@ public class MainActivity extends AppCompatActivity {
             gameReset(view);
         }
         if(gameState[tappedImage] == -1) {
+            count+=1;
             gameState[tappedImage] = activePlayer;
             if (activePlayer == 0)
             {
