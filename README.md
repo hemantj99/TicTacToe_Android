@@ -20,9 +20,8 @@ Tic-tac-toe is a paper-and-pencil game for two players, X and O, who take turns 
 - If you don't see the hardware profile you want, you can create or import a hardware profile. 
 - Once the application is successfully imported, Go to Run -> Run App.
 
+
 I hope you enjoy it!
-
-
 
 
 <!-- CONTRIBUTING -->
@@ -38,15 +37,17 @@ Contributions are what make the open source community such an amazing place to b
 
 
 
+
 <!-- CONTACT -->
 ## Contact
 
-[<img align="left" alt="hemantjain1999 | Twitter" width="22px" src="https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/twitter.svg" />][twitter]
 [<img align="left" alt="hemantjain99 | LinkedIn" width="22px" src="https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/linkedin.svg" />][linkedin]
+[<img align="left" alt="hemantjain1999 | Twitter" width="22px" src="https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/twitter.svg" />][twitter]
 [<img align="left" alt="hemantjain_21 | Instagram" width="22px" src="https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/instagram.svg" />][instagram]
 
 
+[linkedin]: https://linkedin.com/in/hemantjain99
 [twitter]: https://twitter.com/hemantjain1999
 [instagram]: https://instagram.com/hemantjain_21
-[linkedin]: https://linkedin.com/in/hemantjain99
+
 
