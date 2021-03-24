@@ -22,30 +22,31 @@ public class MainActivity extends AppCompatActivity {
     public void playatap(View view){
         ImageView img = (ImageView) view;
         int tappedImage = Integer.parseInt(img.getTag().toString());
-        count+=1;
         if(!gameActive){
             gameReset(view);
         }
         if(gameState[tappedImage] == -1) {
-            count+=1;
             gameState[tappedImage] = activePlayer;
             if (activePlayer == 0)
             {
+                count+=1;
                 img.setImageResource(R.drawable.x);
                 activePlayer = 1;
                 TextView status = findViewById(R.id.status);
-                status.setText("O's Turn - Tap to play");
+                status.setText("Tom's Turn - Tap to play");
             }
             else
             {
+                count+=1;
                 img.setImageResource(R.drawable.o);
                 activePlayer = 0;
                 TextView status = findViewById(R.id.status);
-                status.setText("X's Turn - Tap to play");
+                status.setText("Jerry's Turn - Tap to play");
             }
 
         }
         // Check Which player has won
+        if (count<9){
         for(int[] winPosition: winPositions)
         {
             if (gameState[winPosition[0]] == gameState[winPosition[1]] &&
@@ -57,21 +58,21 @@ public class MainActivity extends AppCompatActivity {
                 gameActive = false;
                 if (gameState[winPosition[0]] == 0)
                 {
-                    win = "X has won";
+                    win = "Jerry has won";
                     count=0;
 
                 }
                 else
                 {
-                    win = "O has won";
+                    win = "Tom has won";
                     count=0;
 
                 }
                 TextView status = findViewById(R.id.status);
                 status.setText(win);
             }
-        }
-        if(count==9)
+        }}
+        else
         {
             TextView status = findViewById(R.id.status);
             status.setText("Draw");
@@ -99,7 +100,7 @@ public class MainActivity extends AppCompatActivity {
         ((ImageView)findViewById(R.id.imageView8)).setImageResource(0);
 
         TextView status = findViewById(R.id.status);
-        status.setText("X's Turn - Tap to play");
+        status.setText("Jerry's Turn - Tap to play");
     }
     @Override
     protected void onCreate(Bundle savedInstanceState)
