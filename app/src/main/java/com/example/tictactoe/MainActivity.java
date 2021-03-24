@@ -1,7 +1,10 @@
 package com.example.tictactoe;
 import androidx.appcompat.app.AppCompatActivity;
+
+import android.graphics.Color;
 import android.os.Bundle;
 import android.view.View;
+import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
@@ -33,6 +36,7 @@ public class MainActivity extends AppCompatActivity {
                 img.setImageResource(R.drawable.x);
                 activePlayer = 1;
                 TextView status = findViewById(R.id.status);
+                status.setTextColor(Color.parseColor("#2C7A3D"));
                 status.setText("Tom's Turn - Tap to play");
             }
             else
@@ -41,12 +45,12 @@ public class MainActivity extends AppCompatActivity {
                 img.setImageResource(R.drawable.o);
                 activePlayer = 0;
                 TextView status = findViewById(R.id.status);
+                status.setTextColor(Color.parseColor("#2C7A3D"));
                 status.setText("Jerry's Turn - Tap to play");
             }
 
         }
         // Check Which player has won
-        if (count<9){
         for(int[] winPosition: winPositions)
         {
             if (gameState[winPosition[0]] == gameState[winPosition[1]] &&
@@ -69,10 +73,11 @@ public class MainActivity extends AppCompatActivity {
 
                 }
                 TextView status = findViewById(R.id.status);
+                status.setTextColor(Color.parseColor("#2C7A3D"));
                 status.setText(win);
             }
-        }}
-        else
+        }
+        if(count==9)
         {
             TextView status = findViewById(R.id.status);
             status.setText("Draw");
@@ -100,6 +105,7 @@ public class MainActivity extends AppCompatActivity {
         ((ImageView)findViewById(R.id.imageView8)).setImageResource(0);
 
         TextView status = findViewById(R.id.status);
+        status.setTextColor(Color.parseColor("#2C7A3D"));
         status.setText("Jerry's Turn - Tap to play");
     }
     @Override

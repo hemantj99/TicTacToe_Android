@@ -4,20 +4,50 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#FFFFFF"
     tools:context=".MainActivity">
 
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="32dp"
-        android:text="@string/heading"
-        android:textSize="24sp"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+    <LinearLayout
+        android:id="@+id/head"
+        android:layout_marginTop="20dp"
+        android:layout_width="405dp"
+        android:layout_height="150dp"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints">
+
+        <ImageView
+            android:id="@+id/imageView11"
+            android:layout_width="160dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/o"
+            android:tag="11" />
+        <ImageView
+            android:id="@+id/imageView12"
+            android:layout_gravity="center"
+            android:layout_width="150dp"
+            android:layout_height="100dp"
+            android:layout_weight="4"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/vs"
+            android:tag="11" />
+
+        <ImageView
+            android:id="@+id/imageView13"
+            android:layout_width="160dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/x"
+            android:tag="13" />
+
+    </LinearLayout>
 
     <ImageView
+        android:layout_marginTop="5dp"
         android:id="@+id/imageView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -26,7 +56,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:layout_constraintTop_toBottomOf="@+id/head"
         app:layout_constraintVertical_bias="0.0"
         app:srcCompat="@drawable/grid" />
 
@@ -154,11 +184,14 @@
         app:layout_constraintStart_toStartOf="parent" />
 
     <Button
+        android:textColor="#2C7A3D"
         android:id="@+id/Reset"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="80dp"
+        android:layout_width="132dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="70dp"
+        android:textSize="24sp"
         android:text="Reset"
+        android:background="#FFFFFF"
         app:layout_constraintBottom_toBottomOf="@+id/status"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
