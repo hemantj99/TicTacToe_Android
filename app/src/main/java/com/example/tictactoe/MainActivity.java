@@ -96,8 +96,17 @@ public class MainActivity extends AppCompatActivity {
         }
         if(count==9)
         {
-            TextView status = findViewById(R.id.status);
-            status.setText("Draw");
+            final FlatDialog flatDialog = new FlatDialog(MainActivity.this);
+            flatDialog.setTitle("               Game is Draw")
+                    .setFirstButtonText("Play Again")
+                    .withFirstButtonListner(new View.OnClickListener() {
+                        @Override
+                        public void onClick(View view) {
+                            flatDialog.dismiss();
+                            gameReset(view);
+                        }
+                    })
+                    .show();
             gameActive = false;
         }
     }
