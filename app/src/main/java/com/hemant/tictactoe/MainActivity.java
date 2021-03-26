@@ -1,4 +1,4 @@
-package com.example.tictactoe;
+package com.hemant.tictactoe;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.graphics.Color;
@@ -9,6 +9,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.example.flatdialoglibrary.dialog.FlatDialog;
+import com.hemant.tictactoe.R;
 
 public class MainActivity extends AppCompatActivity {
     Button Reset;
@@ -17,10 +18,6 @@ public class MainActivity extends AppCompatActivity {
     int activePlayer = 0;
     int count=0,x=0;
     int[] gameState = {-1, -1, -1, -1, -1, -1, -1, -1, -1};
-    //    State meanings:
-    //    0 - X
-    //    1 - O
-    //    -1 - Null
     int[][] winPositions = {{0,1,2}, {3,4,5}, {6,7,8},
             {0,3,6}, {1,4,7}, {2,5,8},
             {0,4,8}, {2,4,6}};
@@ -55,7 +52,6 @@ public class MainActivity extends AppCompatActivity {
             }
 
         }
-        // Check Which player has won
         for(int[] winPosition: winPositions)
         {
             if (gameState[winPosition[0]] == gameState[winPosition[1]] &&
