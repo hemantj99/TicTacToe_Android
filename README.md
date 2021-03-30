@@ -3,7 +3,7 @@ Tom-and-Jerry is a game in which two players seek in alternate turns to complete
 
 ## To Run the Application
 
-- Clone this repo: `git clone https://github.com/hemantj99/Tom-and-Jerry-Game.git`
+- Clone this repo:`git clone https://github.com/hemantj99/Tom-and-Jerry-Game.git`
 
 - Open Android Studio and Since the app is developed in Android Studio, you can clone this app repository and import it into your Android Studio. Then either run it with an emulator or on an actual device (what I do). More information on how to do this is availabe [here](https://developer.android.com/studio/run).
 
