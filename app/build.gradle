@@ -30,7 +30,7 @@ dependencies {
     androidTestImplementation 'androidx.test.ext:junit:1.1.2'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
     implementation 'com.github.mejdi14:Flat-Dialog-Android:1.0.5'
-
+    implementation 'com.intuit.sdp:sdp-android:1.0.6'
 
 
 }
