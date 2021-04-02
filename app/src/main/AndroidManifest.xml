@@ -6,6 +6,7 @@
         android:allowBackup="true"
         android:label="Tom and Jerry"
         android:supportsRtl="true"
+        android:icon="@drawable/icon"
         android:theme="@style/AppTheme">
         <activity android:name="com.hemant.tictactoe.SplashActivity">
             <intent-filter>

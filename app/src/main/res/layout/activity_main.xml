@@ -199,7 +199,7 @@
 
     <TextView
         android:id="@+id/textView2"
-        android:layout_width="@dimen/_50sdp"
+        android:layout_width="@dimen/_47sdp"
         android:layout_height="wrap_content"
         android:textColor="#2C7A3D"
         android:textSize="@dimen/_32sdp"
