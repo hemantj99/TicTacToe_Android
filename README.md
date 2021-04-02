@@ -1,6 +1,15 @@
 # Tom-and-Jerry-Game
 Tom-and-Jerry is a game in which two players seek in alternate turns to complete a row, a column, or a diagonal with either Three Tom or three Jerry drawn in the spaces of a  3×3 grid of nine squares to wins the game. To add this project to android studio.
 
+<p float="left">
+<img src="https://github.com/hemantj99/Tom-and-Jerry-Game/blob/master/Screenshots/screen_1.png" width="150"/>
+<img src="https://github.com/hemantj99/Tom-and-Jerry-Game/blob/master/Screenshots/screen_2.png" width="150"/>
+<img src="https://github.com/hemantj99/Tom-and-Jerry-Game/blob/master/Screenshots/screen_3.png" width="150"/>
+<img src="https://github.com/hemantj99/Tom-and-Jerry-Game/blob/master/Screenshots/screen_6.png" width="150"/>
+<img src="https://github.com/hemantj99/Tom-and-Jerry-Game/blob/master/Screenshots/screen_7.png" width="150"/>
+</p>
+
+
 ## To Run the Application
 
 - Clone this repo:`git clone https://github.com/hemantj99/Tom-and-Jerry-Game.git`
