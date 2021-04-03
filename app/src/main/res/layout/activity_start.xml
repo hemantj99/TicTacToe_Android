@@ -1,9 +1,90 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@android:color/white"
     tools:context=".StartActivity">
 
+    <ImageView
+        android:layout_width="@dimen/_60sdp"
+        android:layout_height="match_parent"
+        android:src="@drawable/border1"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints">
+    </ImageView>
+    <ImageView
+        android:layout_width="@dimen/_60sdp"
+        android:layout_height="match_parent"
+        android:src="@drawable/border1"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:ignore="MissingConstraints">
+    </ImageView>
+
+    <ImageView
+        android:id="@+id/imageView10"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_60sdp"
+        android:src="@drawable/border2"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints">
+
+    </ImageView>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_60sdp"
+        android:src="@drawable/border2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints">
+
+    </ImageView>
+
+    <ImageView
+        android:id="@+id/imageView9"
+        android:layout_width="@dimen/_200sdp"
+        android:layout_height="@dimen/_200sdp"
+        android:src="@drawable/logo"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.165"></ImageView>
+
+    <Button
+        android:id="@+id/play"
+        android:layout_width="@dimen/_100sdp"
+        android:layout_height="@dimen/_50sdp"
+        android:layout_marginTop="@dimen/_50sdp"
+        android:background="@drawable/border"
+        android:text="Play"
+        android:textColor="@android:color/black"
+        android:textSize="@dimen/_20sdp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView9"
+        app:layout_constraintVertical_bias="0.0">
+    </Button>
+    <Button
+        android:id="@+id/Share"
+        android:layout_width="@dimen/_100sdp"
+        android:layout_height="@dimen/_50sdp"
+        android:layout_marginTop="@dimen/_30sdp"
+        android:background="@drawable/border"
+        android:text="Share"
+        android:textColor="@android:color/black"
+        android:textSize="@dimen/_20sdp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/play"
+        app:layout_constraintVertical_bias="0.0">
+    </Button>
 </androidx.constraintlayout.widget.ConstraintLayout>
