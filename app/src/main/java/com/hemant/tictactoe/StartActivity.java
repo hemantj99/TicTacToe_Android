@@ -5,12 +5,13 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.content.pm.ActivityInfo;
 import android.os.Bundle;
-import android.os.Handler;
+import android.view.View;
 import android.view.WindowManager;
-
-import com.hemant.tictactoe.R;
+import android.widget.Button;
 
 public class StartActivity extends AppCompatActivity {
+    Button Play;
+    Button Share;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -19,14 +20,26 @@ public class StartActivity extends AppCompatActivity {
         setContentView(R.layout.activity_start);
         getSupportActionBar().hide();
         getWindow().addFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN);
-        Handler handler = new Handler();
-        handler.postDelayed(new Runnable() {
+        Play = (Button) findViewById(R.id.Play);
+        Share = (Button) findViewById(R.id.Share);
+        Play.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void run() {
+            public void onClick(View view) {
                 Intent intent = new Intent(StartActivity.this ,MainActivity.class);
                 startActivity(intent);
-                finish();
             }
-        }, 25000);
+        });
+        Share.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent sharingIntent = new Intent(android.content.Intent.ACTION_SEND);
+                sharingIntent.setType("text/plain");
+                String shareBody = "TicTacToe Game - Tom and Jerry  " +
+                        "https://play.google.com/store/apps/details?id=com.hemant.tictactoe";
+                sharingIntent.putExtra(android.content.Intent.EXTRA_SUBJECT, "Subject Here");
+                sharingIntent.putExtra(android.content.Intent.EXTRA_TEXT, shareBody);
+                startActivity(Intent.createChooser(sharingIntent, "Share via"));
+            }
+        });
     }
 }

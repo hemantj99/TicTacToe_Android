@@ -10,7 +10,6 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.example.flatdialoglibrary.dialog.FlatDialog;
-import com.hemant.tictactoe.R;
 
 public class MainActivity extends AppCompatActivity {
     Button Reset;

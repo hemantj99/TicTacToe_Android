@@ -8,8 +8,6 @@ import android.os.Bundle;
 import android.os.Handler;
 import android.view.WindowManager;
 
-import com.hemant.tictactoe.R;
-
 public class SplashActivity extends AppCompatActivity {
 
     @Override
@@ -27,6 +25,6 @@ public class SplashActivity extends AppCompatActivity {
                 startActivity(intent);
                 finish();
             }
-        }, 2000);
+        }, 1800);
     }
 }

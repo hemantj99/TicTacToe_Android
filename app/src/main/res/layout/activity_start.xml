@@ -45,22 +45,22 @@
 
     <ImageView
         android:id="@+id/imageView9"
-        android:layout_width="@dimen/_195sdp"
-        android:layout_height="@dimen/_195sdp"
+        android:layout_width="@dimen/_185sdp"
+        android:layout_height="@dimen/_185sdp"
+        android:background="@drawable/border"
         android:src="@drawable/logo"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.165"></ImageView>
+        app:layout_constraintVertical_bias="0.213"></ImageView>
 
     <Button
-        android:id="@+id/play"
+        android:id="@+id/Play"
         android:layout_width="@dimen/_100sdp"
         android:layout_height="@dimen/_50sdp"
         android:layout_marginTop="@dimen/_50sdp"
-        android:background="@drawable/border"
+        android:background = "@drawable/border"
         android:text="Play"
         android:textColor="@android:color/black"
         android:textSize="@dimen/_20sdp"
@@ -84,7 +84,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/play"
+        app:layout_constraintTop_toBottomOf="@+id/Play"
         app:layout_constraintVertical_bias="0.0">
     </Button>
 </androidx.constraintlayout.widget.ConstraintLayout>
