@@ -1,6 +1,7 @@
 # Tom-and-Jerry-Game
 Tom-and-Jerry is a game in which two players seek in alternate turns to complete a row, a column, or a diagonal with either Three Tom or three Jerry drawn in the spaces of a  3×3 grid of nine squares to wins the game. To add this project to android studio.
 
+ <a href='https://play.google.com/store/apps/details?id=com.hemant.tictactoe'><img alt='Get it on Google Play' src='https://play.google.com/intl/en_us/badges/images/generic/en_badge_web_generic.png' width = "250px"/></a>
 
 <p float="left">
   <img src="https://github.com/hemantj99/Tom-and-Jerry-Game/blob/master/Screenshots/screen_1.png" width="150">
