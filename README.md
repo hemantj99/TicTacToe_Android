@@ -57,12 +57,8 @@ Contributions are what make the open source community such an amazing place to b
 
 <!-- CONTACT -->
 ## Contact
+[![Gmail Badge](https://img.shields.io/badge/hemantjain1999@gmail.com-30302f?style=flat&logo=Gmail&logoColor=white)](mailto:hemantjain1999@gmail.com)
+[![Linkedin Badge](https://img.shields.io/badge/hemantjain99-30302f?style=flat&logo=linkedin)](https://linkedin.com/in/hemantjain99/)
+[![Medium Badge](https://img.shields.io/badge/hemantjain1999-30302f?style=flat&logo=medium)](https://medium.com/@hemantjain1999)
+[![Twitter Badge](https://img.shields.io/badge/hemantjain1999-30302f?style=flat&logo=twitter&logoColor=white)](https://twitter.com/hemantjain1999)
 
-[<img align="left" alt="hemantjain99 | LinkedIn" width="22px" src="https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/linkedin.svg" />][linkedin]
-[<img align="left" alt="hemantjain1999 | Twitter" width="22px" src="https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/twitter.svg" />][twitter]
-[<img align="left" alt="hemantjain_21 | Instagram" width="22px" src="https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/instagram.svg" />][instagram]
-
-
-[linkedin]: https://linkedin.com/in/hemantjain99
-[twitter]: https://twitter.com/hemantjain1999
-[instagram]: https://instagram.com/hemantjain_21
